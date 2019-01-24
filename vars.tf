@@ -8,6 +8,7 @@ variable "s3_bucket_versioning_enabled" { default = true        }
 variable "memory_size"                  { default = 384         }
 variable "timeout"                      { default = 200         }
 variable "runtime"                      { default = "python3.6" }
+variable "creeate_s3_bucket"            { default = true        }
 
 variable "aws_s3_bucket_tags" { 
   type    = "map"       
