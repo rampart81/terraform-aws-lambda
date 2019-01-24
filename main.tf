@@ -2,7 +2,7 @@
 ## S3 Bucket for Lambda
 ###########################################################
 resource "aws_s3_bucket" "lambda" {
-  count  = "${var.creeate_s3_bucket ? 1 : 0}"
+  count  = "${var.create_s3_bucket ? 1 : 0}"
   bucket = "${var.s3_bucket_name}"
   acl    = "private"
   tags   = "${var.aws_s3_bucket_tags}"
