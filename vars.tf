@@ -43,11 +43,13 @@ variable "aws_s3_bucket_tags" {
 
 variable "environment" {
   type    = map(string)
-  default = { }
+  default = { 
+    NOOP  =  ""
+  }
 }
 
 variable "vpc_config" {
-  type = map(list(string))
+  type    = map(list(string))
   default = {
     security_group_ids = []
     subnet_ids         = []

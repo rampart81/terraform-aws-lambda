@@ -54,6 +54,7 @@ resource "aws_iam_role" "lambda" {
   ]
 }
 EOF
+
 }
 
 resource "aws_iam_role_policy" "lambda_network_access" {
