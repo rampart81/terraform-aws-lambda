@@ -26,3 +26,6 @@ output "source_code_size" {
   value = aws_lambda_function.lambda.source_code_size
 }
 
+output "kms_key_arn" {
+  value = aws_lambda_function.lambda.kms_key_arn
+}
