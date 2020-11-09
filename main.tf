@@ -79,6 +79,7 @@ resource "aws_lambda_function" "lambda" {
   timeout                        = var.timeout
   reserved_concurrent_executions = var.reserved_concurrent_executions
   role                           = aws_iam_role.lambda.arn
+  layers                         = flatten(var.layers)
 
   vpc_config {
     security_group_ids = var.vpc_config["security_group_ids"]

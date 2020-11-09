@@ -1,3 +1,8 @@
+variable "layers" {
+  type    = list(string)
+  default = []
+}
+
 variable "s3_key" {
 }
 
